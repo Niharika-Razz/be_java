@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Finally {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x,y,z;
+		Scanner sc=new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		try
+		{
+			z=x/y;
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("You are trying to divide a number with zero");
+			z=x/2;
+		}
+		finally
+		{
+			System.out.println("finally block");
+		}
+		System.out.println(z);
+		// TODO Auto-generated method stub
+
+	}
+
+}
+output:
+10
+2
+finally block
+5
