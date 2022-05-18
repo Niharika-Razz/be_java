@@ -1,0 +1,27 @@
+import java.io.*;
+public class Sam1 {
+
+	public static void main(String[] args) {
+		int n=Integer.parseInt("10");
+		System.out.println(n);
+	}
+
+}
+output:10
+
+
+exception:
+import java.io.*;
+public class Sam1 {
+
+	public static void main(String[] args) {
+		int n=Integer.parseInt("xyz");
+		System.out.println(n);
+	}
+
+}
+Exception in thread "main" java.lang.NumberFormatException: For input string: "xyz"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+	at code_java.Sam1.main(Sam1.java:6)
