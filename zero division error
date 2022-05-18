@@ -1,0 +1,27 @@
+package code_java;
+import java.io.*;
+public class Excep {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=10,y=0,z;
+		try
+		{
+			System.out.println("Statement 1");
+			z=x/y;
+		}
+		catch(ArithmeticException ae)
+		{
+			y=2;
+			z=x/y;
+			System.out.println("Statement 2");
+		}
+		 System.out.println(z);
+	}
+
+}
+
+output:
+Statement 1
+Statement 2
+5
