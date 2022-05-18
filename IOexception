@@ -1,0 +1,7 @@
+Keywords used in Exception handling:
+-----------------------------------------
+try - this block contains the code that might throw an exception.the try block contains at least ont catch block or finally block.
+catch - this block must be declared after try block.It contains the error handling code.
+throw - throw keyword in java is used to explicitly throw our own exception.
+throws - the throes keyword is generally used for handling checked exception.When you do not want to handle a program by try and catch block ,it can be handled by throws.
+finally - the code present in finally block will always be executed even if try block generate some exception.
