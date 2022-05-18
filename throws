@@ -1,0 +1,77 @@
+package code_java;
+import java.io.*;
+public class throw1 {
+	public void display(String s)
+	{
+		try
+		{
+			System.out.println(s.length());
+		}
+		catch(NullPointerException ae)
+		{
+			System.out.println("null pointer exception");
+		}
+	}
+
+	public static void main(String[] args) {
+		String s=null;
+		throw1 t=new throw1();
+		t.display(s);
+	}
+
+}
+output:
+null pointer exception
+
+public class throw_exp {
+	public void display(String s)throws NullPointerException
+	{
+		System.out.println(s.length());
+	}
+
+	public static void main(String[] args) {
+		String s=null;
+		throw_exp t=new throw_exp();
+		t.display(s);
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
+output:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at code_java.throw_exp.display(throw_exp.java:6)
+	at code_java.throw_exp.main(throw_exp.java:12)
+
+public class Throws {
+	public void display(String s)throws NullPointerException
+	{
+		System.out.println(s.length());
+	}
+	public static void main(String[] args) {
+		String s=null;
+		Throws t=new Throws();
+		try
+		{
+			t.display(s);	
+		}
+		catch(NullPointerException ae)
+		{
+			System.out.println("String must be initialised");
+			System.out.println(ae);
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+output:
+String must be initialised
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+
+
+
+
+
+  
