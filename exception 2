@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class sam2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x,y,z;
+		Scanner sc=new Scanner(System.in);
+		x=sc.nextInt();
+		y=sc.nextInt();
+		try
+		{
+			z=x/y;
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("You are trying to divide a number with zero");
+			z=x/2;
+		}
+		System.out.println(z);
+
+	}
+
+}
+
+output:
+5
+0
+//exception will be raised
+You are trying to divide a number with zero
+2
+
+output:
+//catch block will not be executed if there is no exception
+10
+2
+5
