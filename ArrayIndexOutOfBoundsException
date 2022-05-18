@@ -1,0 +1,48 @@
+import java.io.*;
+public class exception9 {
+
+	public static void main(String[] args) {
+		int x[]= {10,20,30,40,50},sum=0;
+		try
+		{
+			for(int i=0;i<=x.length;i++)
+			{
+				sum=sum+x[i];
+			}
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("Exception raised");
+		}
+		System.out.println(sum);
+	}
+
+}
+
+output:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at code_java.exception9.main(exception9.java:11)
+
+import java.io.*;
+public class exception9 {
+
+	public static void main(String[] args) {
+		int x[]= {10,20,30,40,50},sum=0;
+		try
+		{
+			for(int i=0;i<=x.length;i++)
+			{
+				sum=sum+x[i];
+			}
+		}
+		catch(ArrayIndexOutOfBoundsException ae)
+		{
+			System.out.println("Exception raised");
+		}
+		System.out.println(sum);
+	}
+
+}
+output:
+Exception raised
+150
