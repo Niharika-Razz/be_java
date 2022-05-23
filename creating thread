@@ -1,0 +1,70 @@
+package code_java;
+class Thread1 extends Thread
+{
+	public void run()
+	{
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("Dhoni");
+		}
+	}
+}
+class Thread2 extends Thread
+{
+	public void start()
+	{
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("Shewag");
+		}
+	}
+}
+public class Thread {
+
+	public static void main(String[] args) {
+		Thread1 t1=new Thread1();
+		Thread2 t2=new Thread2();
+		t1.run();
+		t2.start();
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("yuvaraj");
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+output:
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Dhoni
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+Shewag
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+yuvaraj
+
